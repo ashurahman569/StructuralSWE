@@ -104,7 +104,7 @@ class HighValueDiscount extends DiscountDecorator {
 // ─────────────────────────────────────────────
 // Step 5: Main — fills in the ?? blanks
 // ─────────────────────────────────────────────
-public class Online22B1 {
+public class Online21B1 {
     public static void main(String[] args) {
 
         double basePrice = 12000; // Initial price of the product
