@@ -8,7 +8,9 @@ public class DurationDiscountDecorator extends CartDecorator {
     }
 
     private boolean eligible() {
-        return getItems().stream().anyMatch(i -> i.getDurationInMinutes() >= THRESHOLD_MINS);
+        return getItems().stream()
+            .mapToInt(EducationalItem::getDurationInMinutes)
+            .sum() >= THRESHOLD_MINS;
     }
 
     @Override
